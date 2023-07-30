@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="icon" href="thermometer.png">
+    
+    <!--Custom google font link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+    <!--custom css link-->
+    <link rel="stylesheet" href="styles.css">
+ 
+    <!--Fontawesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="app-details">
+            <h1 class="app-title"><span>Temperature</span>  Converter</h1>
+            <img class="app-icon" src="temp.jpg">
+        </div>
+        <label for="temp">Temperature</label>
+        <input type="number" id="temp" value="100">
+        <div class="dropdown">
+            <select id="from-temp-select"></select>
+            <select id="to-temp-select"></select>
+        </div>
+        <button id="convert">Convert</button>
+        <p id="result"></p>
+    </div>
+
+
+    <script src="currency.js"></script>
+    <script src="api-key.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
